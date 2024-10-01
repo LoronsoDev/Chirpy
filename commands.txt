@@ -1,0 +1,4 @@
+go build -o out && ./out
+sqlc generate
+goose postgres postgres://postgres:uno1dos2tres3@localhost:5432/chirpy up
+goose postgres postgres://postgres:uno1dos2tres3@localhost:5432/chirpy down
